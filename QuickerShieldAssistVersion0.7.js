@@ -19,7 +19,7 @@ blackList.forEach(
     var found;
     
     for (var i = 0; i < aTags.length; i++) {
-      if (aTags[i].getAttribute("href") == searchUser) {
+      if (aTags[i].innerText.includes(searchUser)) {
         found = aTags[i];
 
         //found.parentElement.parentElement.remove();
